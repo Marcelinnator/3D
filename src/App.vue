@@ -1,6 +1,10 @@
 
 <template>
-  <div id="grid">
+
+
+
+  <div id="grid"> 
+    <div id="info"> <meInfo /> </div> <!-- info   -->
     <div id="bilderundtxt">
       <txtundpng />
     </div>
@@ -20,7 +24,8 @@
 
 <script>
 import { ref } from "vue";
-//import meInfo from './components/me-Info.vue'
+// eslint-disable-next-line no-unused-vars
+import meInfo from './components/me-Info.vue'
 import txtundpng from "./components/bilder-txt.vue"; //noch Ändern
 import mainbody from "./components/Main-body.vue";
 import nliste from "./components/NL-iste.vue";
@@ -80,10 +85,20 @@ const info = ref(false);
   display: grid;
   grid-template-areas:
     "bild bild bild bild bild bild"
+    "bild bild bild bild bild bild"
     "liste main main main right right"
     "liste footer footer footer footer footer";
   gap: 10px;
   /* background-color: #ffffff; */
   padding: 10px;
+}
+#info{
+
+   grid-area: main,bild,liste;
+
+
+
+
+
 }
 </style>

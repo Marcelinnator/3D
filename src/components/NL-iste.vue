@@ -1,33 +1,33 @@
 <template>
   <!-- this.$emit('test') 'fusion' -->
-  <p>{{ geclikt }}</p>
+  
   <ul>
     <h2>3d softwahre</h2>
     <ol>
-      <h3>Autodesk</h3>
+      <h3>Was ist D3 softwer</h3>
       <li>
-        <a href="#about" @click="this.$emit('gedrueckt', 'fusion')">fusion</a>
+        <a href="#about" @click="this.$emit('gedrueckt', 'einführung')">einführung</a>
       </li>
       <!--übergabe der gedrückten werte zu App.vue-->
       <li>
-        <a href="#about" @click="this.$emit('gedrueckt', 'maia')">maia</a>
+        <a href="#about" @click="this.$emit('gedrueckt', 'Baisik')">Baisik</a>
       </li>
       <!--event wird ferschikt und vom parent component mit @abgefangen-->
       <li><a href="#about">...</a></li>
     </ol>
     <ol>
-      <h2>maxon</h2>
+      <h2>verschidene programme</h2>
       <li>
-        <a href="#about" @click="this.$emit('gedrueckt', 'fusion')">fusion</a>
+        <a href="#about" @click="this.$emit('gedrueckt', 'softwehr im überblick')">softwehr</a>
       </li>
       <li>
-        <a href="#about" @click="this.$emit('gedrueckt', 'fusion')">fusion</a>
+        <a href="#about" @click="this.$emit('gedrueckt', 'nützlichebeseiten')">nützlich webseiten</a>
       </li>
     </ol>
     <ol>
       <h2>SideFX</h2>
       <li>
-        <a href="#about" @click="this.$emit('gedrueckt', 'fusion')">fusion</a>
+        <a href="#about" @click="this.$emit('gedrueckt', 'Blender')">fusion</a>
       </li>
     </ol>
     <ol>
@@ -43,7 +43,7 @@
       </li>
     </ol>
   </ul>
-  <p>{{ geclikt }}</p>
+  
 </template>
 <style scoped>
 ol {

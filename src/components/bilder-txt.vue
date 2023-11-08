@@ -1,10 +1,15 @@
 <template>
-  <button @click="weiter">{{counter}}</button>
+<div>
   <img src="../assets/blender_logo.jpg" v-if="(counter == 0)" />
 
   <img src="../assets/blender_logo.jpg" v-else-if="(counter == 1)" />
   <img src="" v-else-if="(counter == 2)" />
   <img src="../assets/logo.png" v-else-if="(counter == 3)" />
+    <div float: right>
+           <button  @click="weiter">{{counter}}</button>
+    </div>
+
+</div>
 </template>
 
 <script>
