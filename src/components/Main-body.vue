@@ -1,6 +1,17 @@
 <template>
   <button @click="weiter">{{counter}}</button>
   <div id=maincss>
+    <p v-if="gedruektunduebergeben == 'klifffenger'">
+  
+  
+
+
+
+
+
+
+
+    </p>
   <p v-if="gedruektunduebergeben == 'nix'">
     <span class="pg" v-for="paragraph in letter" :key="paragraph">    <!-- span  -->
       <!--ausgabe aus txt fail wen rüchgabewert aus liste nix ist -->
@@ -132,6 +143,11 @@ Work also der große unterschied liegt darin wie einfach oder schwierig es ist i
 <td>nicht probirt</td>
 </tr>
 <tr>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+<tr>
 <td><a href="https://www.autodesk.de/products?mktvar002=4417848|SEM|20113631970|151508753640|kwd-10106226&utm_source=GGL&utm_medium=SEM&utm_campaign=GGL_DEC_Autodesk_EMEA_DE_eComm_SEM_BR_New_MIX_0000_4417848_Nurture&utm_id=4417848&utm_term=kwd-10106226&ef_id=Cj0KCQiAgK2qBhCHARIsAGACuzmbw8nrKGTxNQDaToOo0-4FO4y0DQf2ucX9zbyVw2qjpmF16sKdjnIaAvOXEALw_wcB:G:s&s_kwcid=AL!11172!3!658145370663!b!!g!!autodesk!20113631970!151508753640&mkwid=s|pcrid|658145370663|pkw|autodesk|pmt|b|pdv|c|slid||pgrid|151508753640|ptaid|kwd-10106226|pid|&utm_medium=cpc&utm_source=google&utm_campaign=&utm_term=autodesk&utm_content=s|pcrid|658145370663|pkw|autodesk|pmt|b|pdv|c|slid||pgrid|151508753640|ptaid|kwd-10106226|&gclid=Cj0KCQiAgK2qBhCHARIsAGACuzmbw8nrKGTxNQDaToOo0-4FO4y0DQf2ucX9zbyVw2qjpmF16sKdjnIaAvOXEALw_wcB">Autodesk</a></td>
 <td>D3 softwahre Paket mit Allroundern und spezifizierten Programmen</td>
 <td>gratis für Schüler und Studenten</td>
@@ -176,7 +192,7 @@ export default {
   props: {
     gedruektunduebergeben: {
       type: String,
-      default: "nix",
+      default: "klifffenger",
     },
   },
 

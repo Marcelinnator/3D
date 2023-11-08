@@ -24,6 +24,7 @@
 
 <script>
 import { ref } from "vue";
+
 // eslint-disable-next-line no-unused-vars
 import meInfo from './components/me-Info.vue'
 import txtundpng from "./components/bilder-txt.vue"; //noch Ändern

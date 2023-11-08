@@ -1,6 +1,7 @@
 <template>
-    <div class="popup">
+  
     <div class="info">
+    <div class="popup">
      <p>inhalt</p>
      
     <h2>hallo</h2>
