@@ -1,5 +1,4 @@
- das ist text aus text.txt aus dem direktory
-
- er ist nicht schon aber er kommt ja auch aus.txt
- unnötig ja trotzem lustig 
-  und er ist das erste was man siht wen du euf einen der reiter klikst wirst du nur duch das neuladen dieser seite in der lage sein disen text wider zu sehen
+hallo das ist eine Webseite welche ich für ein schulprojekt 
+erstellt habe alle bilder die verwendet wurden sind von mir selbst erstellt 
+(renders Blender) ich habe obwohl es auf der oberfleche nicht nach viel arbeit aus siht viel 
+zeit in das Projekt hinengestekt.

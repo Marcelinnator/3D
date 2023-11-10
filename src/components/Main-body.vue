@@ -1,198 +1,184 @@
 <template>
-  <button @click="weiter">{{counter}}</button>
+  
   <div id=maincss>
-    <p v-if="gedruektunduebergeben == 'klifffenger'">
-  
-  
+    
 
 
 
-
-
-
-
-    </p>
-  <p v-if="gedruektunduebergeben == 'nix'">
+  <p v-if="gedruektunduebergeben == 'klifffenger'">  
     <span class="pg" v-for="paragraph in letter" :key="paragraph">    <!-- span  -->
       <!--ausgabe aus txt fail wen rüchgabewert aus liste nix ist -->
       {{ paragraph }}
+
+      
     </span>
   </p>
-  <!-- <p v-if="gedruektunduebergeben == 'nix'"></p> -->
-  <dif v-if="gedruektunduebergeben == 'einführung'"> 
-<p>nun haben wie eine generelle Idee wie wie 3d funktioniert aber wie können wir darauf Einfluss nehmen </p>
-<p>**ich werde mich hierbei auf Blender <a href="https://www.blender.org/download/">https://www.blender.org/download/</a> beziehen da alles was mit den simpleren Anbietern möglich ist auch mit   Blender realisierbar ist und es gratis ist </p>
-<p>Also welche Möglichkeiten der  Bearbeitung gibt es </p>
-<ul>  <!--unsortirte liste -->
-<li>nondestruktive </li>
-<li>destruktive
-Work also der große unterschied liegt darin wie einfach oder schwierig es ist in der Zukunft eines Projektes eine Aktion rückgängig zu machen</li>
+  
+  <div v-if="gedruektunduebergeben == 'stepthree'"> 
+<p>das ist einen Navigation Hilfe zum Thema einstig in die große Welt von 3D modellig   </p>
+<p>hier findest du alle grundlegenden Informationen rund um 3d Modelung 
+und an den punkten wo ich ich habe nicht die nötigen Ressourcen und das Wissen habe
+um dir weiter zu helfen</p>
+<h3>was kannst du von dieser Webseite erwarten</h3>
+<p>-eine Einführung in die absoluten Grundlagen </p>
+<ul>
+<li>eine Beschreibung welche Arten der Bearbeitung es gibt</li>
+<li>ein vergleich der größten Software die es zur zeit gibt, welche für welche zwecke benutzt wird und was sie von den anderen unterscheidet.</li>
+<li>Hilfe zum starten wie eine liste von Totorials und webseiten von welchen man gratis texturen und models bekommen kannst</li>
 </ul>
-<table> 
-<thead>
-<tr>
-<th>destruktiv</th>
-<th>deutsch destruktiv</th>
-<th>nicht destruktiv</th>
-<th>deutsch nicht destruktiv</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Skulpting</td>
-<td>Bildhaunen (tohnarbeit modeliren)</td>
-<td>Skaling/orientirung</td>
-<td>endern wie groß oder wie er in relation zum rest orientirt ist</td>
-</tr>
-<tr>
-<td>Supdivide</td>
-<td>das erschaffen von mehr vertesis vertexen...</td>
-<td>Geometrie nods</td>
-<td>das ferwnden eines editors welchlcher haupsechlich  für texturen und partikel ferwendet wird</td>
-</tr>
-<tr>
-<td>Painting</td>
-<td>Malen ja du malst es an</td>
-<td>animatioen</td>
-<td>die Veränderung einer Eigenschaft eines Objektes wie Größe rientirung position in einem animirten forgang</td>
-</tr>
-</tbody>
-</table>
-
- </dif>
-
-  <div v-if="gedruektunduebergeben == 'Baisik'">
-    <h1>Generelle Basiselemente</h1>
-
-    <h2>3D Software auf ihrem Kern arbeitet grundlegend mit 3 dingen</h2>
-    <ol>
-      <li>Vertices</li>
-      <li>Edges</li>
-      <li>Faces</li>
-    </ol>
-   
-    <p>welche zusammen das sogenannte mesh</p>
- 
+ </div>
 
 
-    <p>
-      Hier auf dem Bild eines Torus kann man auch relativ gut erkennen aus was
-      er gemacht ist.
-    </p>
+
+<div v-if="gedruektunduebergeben == 'einführung'"> 
+<p>Einleitung </p>
+<p>#die absoluten Grundlagen</p>
+<p>3D Software auf ihrem Kern  arbeitet grundlegend mit 3 dingen 
+1 Vertices 
+2 Edges
+3 Faces</p>
+<p>welche zusammen das sogenannte mesh</p>
+<!-- <img src="../assets/>" /> -->
+<!-- <img src="../assets/blender_logo.jpg"> -->
+<p>Beispiel Torus Render  </p>
+<p>zuerst aus den Vertices das sind die Punkte jeder einzelne hat eine x y und z Position
+dann die Edges (Kannten) welche 2 vertesis mit einander verbinden
+und die Faces (Flechen) welche im Endeffekt sichtbar sind  zwischen mindesten 2 Edges
+gespant werden </p>
+</div>
 
 
-    <!-- <div id= mainbilder  ></div> -->
-    <!-- <img "ScreenshotBlenderTorus.png" > -->
-    <p>
-      zuerst aus den Vertices das sind die Punkte jeder einzelne hat eine x y
-      und z Position dann die Edges (Kannten) welche 2 vertesis mit einander
-      verbinden und die Faces (Flechen) welche im Endeffekt sichtbar sind
-      zwischen mindesten 2 Edges gespant werden
-    </p>
-  </div>
-   <div v-if="gedruektunduebergeben == 'einführung'">
-<h1>die wichtigsten 3d Programme (Anbieter und bei einigen der Preis  Webseiten 
-  alle in der Info oder beim Chicken auf den des Anbieters  )  </h1>
+
+
+
+  <div v-if="gedruektunduebergeben == 'bearbeitung'">
+
+<p>#bearbeitungsmöglichkeiten</p>
 <table>
 <thead>
 <tr>
-<th>Name / Name Anbieter</th>
-<th>was ist es für ein Programm</th>
-<th>kosten Bündel / kosten einzeln</th>
+<th>Arten der Bearbeitung</th>
+<th>Was Passiert / Was wird getan</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><a href="https://www.blender.org/download/">Blender</a></td>
-<td>Allraunder</td>
-<td>gratis</td>
+<td>-Skalierung/Orientierung/Position</td>
+<td>Sind genau so wichtig wie Kamera Bewegung es ist von Programm zu Programm unterschiedlich     - --</td>
 </tr>
 <tr>
-<td></td>
-<td></td>
-<td></td>
+<td>-verschieben von mesches, Vertices ,Edges und Faces</td>
+<td>Bietet die einfachste Möglichkeit die Relation einzelner Meshes zueinander oder die Struktur in einem mesch zu ferendern</td>
 </tr>
 <tr>
-<td><a href="">Uni Maker</a></td>
-<td>Hersteller von 3D Druckern</td>
-<td></td>
+<td>-modifiers</td>
+<td>Viele Programme bieten Modifikationen wie zum Beispiel das hinzufügen einer Spiegel Achse.</td>
 </tr>
 <tr>
-<td>Cura   </td>
-<td>Slicer </td>
-<td>gratis </td>
+<td>-Geometrie nods</td>
+<td>Eine Möglichkeit Texturen. Partikel oder andere Effekte  hinzuzufügen</td>
 </tr>
 <tr>
-<td></td>
-<td></td>
-<td></td>
+<td>Animationen</td>
+<td>Bietet die Möglichkeit Objekte in vorgegebenen interwallen zu bewegen oder Eigenschaften von ihnen zu verändern.</td>
 </tr>
 <tr>
-<td><a href="https://www.maxon.net/de/maxon-one-and-adobe-substance-3d?gclid=Cj0KCQiAgK2qBhCHARIsAGACuzmWrcK8JaZ0g9x5L_3JBcrax0_AZwIyRn2obzFwFmzwfyK5KefTAlcaAp7_EALw_wcB">maxon</a></td>
-<td>D3 softwahre Paket mit Allraundern und spesifizirten programmen</td>
-<td>nicht alle  probirt</td>
+<td>Rigging</td>
+<td>Fügt Knochen hinzu um Animationen Realistischer und &quot;einfacher&quot; zu machen</td>
 </tr>
 <tr>
-<td>zBrush             </td>
-<td>Skulpthing/Painting</td>
-<td>Demo umsonst       </td>
+<td>sculpthing</td>
+<td>Ist eine Möglichkeit dein mesh wie ein stück ton zu formen</td>
 </tr>
 <tr>
-<td>Cinema 4d    </td>
-<td>Alraunder    </td>
-<td>nicht probirt</td>
-</tr>
-<tr>
-  <td></td>
-  <td></td>
-  <td></td>
-</tr>
-<tr>
-<td><a href="https://www.autodesk.de/products?mktvar002=4417848|SEM|20113631970|151508753640|kwd-10106226&utm_source=GGL&utm_medium=SEM&utm_campaign=GGL_DEC_Autodesk_EMEA_DE_eComm_SEM_BR_New_MIX_0000_4417848_Nurture&utm_id=4417848&utm_term=kwd-10106226&ef_id=Cj0KCQiAgK2qBhCHARIsAGACuzmbw8nrKGTxNQDaToOo0-4FO4y0DQf2ucX9zbyVw2qjpmF16sKdjnIaAvOXEALw_wcB:G:s&s_kwcid=AL!11172!3!658145370663!b!!g!!autodesk!20113631970!151508753640&mkwid=s|pcrid|658145370663|pkw|autodesk|pmt|b|pdv|c|slid||pgrid|151508753640|ptaid|kwd-10106226|pid|&utm_medium=cpc&utm_source=google&utm_campaign=&utm_term=autodesk&utm_content=s|pcrid|658145370663|pkw|autodesk|pmt|b|pdv|c|slid||pgrid|151508753640|ptaid|kwd-10106226|&gclid=Cj0KCQiAgK2qBhCHARIsAGACuzmbw8nrKGTxNQDaToOo0-4FO4y0DQf2ucX9zbyVw2qjpmF16sKdjnIaAvOXEALw_wcB">Autodesk</a></td>
-<td>D3 softwahre Paket mit Allroundern und spezifizierten Programmen</td>
-<td>gratis für Schüler und Studenten</td>
-</tr>
-<tr>
-<td>maya      </td>
-<td>Allrounder</td>
-<td>          </td>
-</tr>
-<tr>
-<td>Fusion 360                   </td>
-<td>Bauteilmodelirung (technisch)</td>
-<td>                             </td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td><a href="https://www.sidefx.com/products/houdini/">houdini</a></td>
-<td>Allrounder mit fokus auf Pyro und Phisical Simulation</td>
-<td></td>
+<td>painting</td>
+<td>Betonung ligt auf pain beim anmalen</td>
 </tr>
 </tbody>
-</table></div>
- 
+</table>
+<p>Das sind so die genigstens und wichtigsten Möglchkeiten in 3D softwehr dinge zu endern</p>
+  </div>
+
+
+
+   <div v-if="gedruektunduebergeben == 'softwehr'">
+
+
+<h1>Programme</h1>
+<p>welche Programme gibt es die </p>
+<p>3D Animationen und Rendering</p>
+<p>
+  <a href="https://www.blender.org/download/">Blender</a>
+</p>
+<p>
+ <a href="https://www.autodesk.de/products?mktvar002=4417848|SEM|20113631970|151508753640|kwd-10106226&utm_source=GGL&utm_medium=SEM&utm_campaign=GGL_DEC_Autodesk_EMEA_DE_eComm_SEM_BR_New_MIX_0000_4417848_Nurture&utm_id=4417848&utm_term=kwd-10106226&ef_id=Cj0KCQiAgK2qBhCHARIsAGACuzmbw8nrKGTxNQDaToOo0-4FO4y0DQf2ucX9zbyVw2qjpmF16sKdjnIaAvOXEALw_wcB:G:s&s_kwcid=AL!11172!3!658145370663!b!!g!!autodesk!20113631970!151508753640&mkwid=s|pcrid|658145370663|pkw|autodesk|pmt|b|pdv|c|slid||pgrid|151508753640|ptaid|kwd-10106226|pid|&utm_medium=cpc&utm_source=google&utm_campaign=&utm_term=autodesk&utm_content=s|pcrid|658145370663|pkw|autodesk|pmt|b|pdv|c|slid||pgrid|151508753640|ptaid|kwd-10106226|&gclid=Cj0KCQiAgK2qBhCHARIsAGACuzmbw8nrKGTxNQDaToOo0-4FO4y0DQf2ucX9zbyVw2qjpmF16sKdjnIaAvOXEALw_wcB">Maya von Autodesk</a>
+</p>
+<p>
+<a href="https://www.maxon.net/de/maxon-one-and-adobe-substance-3d?gclid=Cj0KCQiAgK2qBhCHARIsAGACuzmWrcK8JaZ0g9x5L_3JBcrax0_AZwIyRn2obzFwFmzwfyK5KefTAlcaAp7_EALw_wcB">Cinema 4D von maxon </a>
+</p>
+<p>
+und <a href="https://www.sidefx.com/products/houdini/">houdini</a></p>
+<p>sind die Größten 4 und 
+Blender ist Komplet kostenlos,
+Maya ,Cinema 4D und Houdini besitzen eine gratis Test Version</p>
+<p>von den hier genannten würde ich Blender weiter empfehlen da hier die gröste comiunity vorhanden ist </p>
+<p>für Bauteile wehre meine empfehlung</p>
+<p><a href="https://www.autodesk.de/products?mktvar002=4417848|SEM|20113631970|151508753640|kwd-10106226&utm_source=GGL&utm_medium=SEM&utm_campaign=GGL_DEC_Autodesk_EMEA_DE_eComm_SEM_BR_New_MIX_0000_4417848_Nurture&utm_id=4417848&utm_term=kwd-10106226&ef_id=Cj0KCQiAgK2qBhCHARIsAGACuzmbw8nrKGTxNQDaToOo0-4FO4y0DQf2ucX9zbyVw2qjpmF16sKdjnIaAvOXEALw_wcB:G:s&s_kwcid=AL!11172!3!658145370663!b!!g!!autodesk!20113631970!151508753640&mkwid=s|pcrid|658145370663|pkw|autodesk|pmt|b|pdv|c|slid||pgrid|151508753640|ptaid|kwd-10106226|pid|&utm_medium=cpc&utm_source=google&utm_campaign=&utm_term=autodesk&utm_content=s|pcrid|658145370663|pkw|autodesk|pmt|b|pdv|c|slid||pgrid|151508753640|ptaid|kwd-10106226|&gclid=Cj0KCQiAgK2qBhCHARIsAGACuzmbw8nrKGTxNQDaToOo0-4FO4y0DQf2ucX9zbyVw2qjpmF16sKdjnIaAvOXEALw_wcB">Fusion 360 von Autodesk</a> hat eine Test Version welche umsonst ist 
+und als Slicer würde ich euch<a href="https://ultimaker.com/software/ultimaker-cura/">ultimaker-cura</a> empfehlen auch kostenlos;</p>
+
+   </div>
+
+
+
+
+
+<div v-if="gedruektunduebergeben == 'web'">
+<h1>Nützliche Webseiten</h1>
+
+<ul>
+<li><a href="https://www.poliigon.com/search/free?page=2">Poliigon</a></li>
+<li><a href="https://substance3d.adobe.com/assets/allassets?free=true">Substance3d.adobe.com</a></li>
+<li><a href="https://www.textures.com/free">Textures.com</a></li>
+<p> sind 3 Webseiten bei denen ihr euch Modelle,Texturen und anderes Zeug kaufen könnt </p>
+<p>aber es gibt einige gratis modelle welche nützlich sein können</p>
+
+<li><a href="https://github.com/agmmnn/awesome-blender">https://github.com/agmmnn/awesome-blender</a></li>
+</ul>
+
 
 
 
 
 </div>
+<div v-if="gedruektunduebergeben == 'Blender'">
+<h3>Donat Projekt</h3>
+<p><a href="https://www.youtube.com/watch?v=nIoXOplUvAw">https://www.youtube.com/watch?v=nIoXOplUvAw</a></p>
+<p>Womit ich persönlich angefangen habe(das ergebnis)</p>
+<img  id="donat" src="../assets/donat.png">
 
 
+<h3> Skulpthing</h3>
+<p><a href="https://www.youtube.com/watch?v=g5CjPLFVl0w">https://www.youtube.com/watch?v=g5CjPLFVl0w</a></p>
+
+<h3>Rigging</h3>
+<p><a href="https://www.youtube.com/watch?v=BiPoPMnU2VI">https://www.youtube.com/watch?v=BiPoPMnU2VI</a></p>
+</div>
+
+
+  </div>
+
+  
 </template>
 
 <script>
-import { ref } from "vue";
+//import { ref } from "vue";
 import text1 from "raw-loader!../assets/text.txt"; // import row-loader bieted die möglichkeit dateien auszulesen und   <span  class="pg" v-for="paragraph in letter" :key="paragraph"> <span> auszugeben
 
 export default {
   props: {
     gedruektunduebergeben: {
       type: String,
-      default: "klifffenger",
+      default: "fusion",
     },
   },
 
@@ -200,19 +186,9 @@ export default {
     return {
       
       letter: text1.split("\n\n"),
-       weiter:weiter,
-      counter:counter
     };
   },
 };
-const counter = ref(0)
-const end = ref(4)
- function weiter(){
-  counter.value++
-  if (counter.value >= end.value){
-    counter.value = 0
-  }
-}
 // const imgTorus = ref(true); //ref variable als true (boolion definirt)
 // function wechseln() {
 //   imgTorus.value = !imgTorus.value;
@@ -222,17 +198,19 @@ const end = ref(4)
 </script> 
 
 <style>
-/* #mainbilder{
-background-color: blanchedalmond;
-
-
-} */
 #maincss{
-
 text-align: left;
+background-color: rgb(243, 237, 237);
+border-radius: 4pc;
+  margin: 0;
+  padding: 30px;
+}
+#donat{
+
+
+height: 400px;
+border-image-width: 0ch;
 
 }
-
-
 
 </style>

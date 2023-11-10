@@ -1,42 +1,35 @@
 <template>
   <!-- this.$emit('test') 'fusion' -->
   
-  <ul>
-    <h2>3d softwahre</h2>
+  <ul style= "width: inherit;"> 
+
+    <h2>3D Softwahre</h2>
     <ol>
-      <h3>Was ist D3 softwer</h3>
+      <!-- <h3><a href="#about" @click="this.$emit('gedrueckt', 'erwartungen')">Was kanst du von dieser webseite erwarten</a></h3> -->
+      <h3>Was ist D3 Softwahre</h3>
       <li>
-        <a href="#about" @click="this.$emit('gedrueckt', 'einführung')">einführung</a>
+        <a href="#about" @click="this.$emit('gedrueckt', 'einführung')">Grundbegriffe</a>
       </li>
       <!--übergabe der gedrückten werte zu App.vue-->
       <li>
-        <a href="#about" @click="this.$emit('gedrueckt', 'Baisik')">Baisik</a>
+        <a href="#about" @click="this.$emit('gedrueckt', 'bearbeitung')">Bearbeitungsmöglichkeiten</a>
       </li>
       <!--event wird ferschikt und vom parent component mit @abgefangen-->
-      <li><a href="#about">...</a></li>
+      
     </ol>
     <ol>
       <h2>verschidene programme</h2>
       <li>
-        <a href="#about" @click="this.$emit('gedrueckt', 'softwehr im überblick')">softwehr</a>
+        <a href="#about" @click="this.$emit('gedrueckt', 'softwehr')">Programme</a>
       </li>
       <li>
-        <a href="#about" @click="this.$emit('gedrueckt', 'nützlichebeseiten')">nützlich webseiten</a>
-      </li>
-    </ol>
-    <ol>
-      <h2>SideFX</h2>
-      <li>
-        <a href="#about" @click="this.$emit('gedrueckt', 'Blender')">fusion</a>
+        <a href="#about" @click="this.$emit('gedrueckt', 'web')">nützlich webseiten</a>
       </li>
     </ol>
     <ol>
-      <h2>free</h2>
+      <h2>Tutorials</h2>
       <li>
-        <a href="#about" @click="this.$emit('gedrueckt', 'fusion')">fusion</a>
-      </li>
-      <li>
-        <a href="#about" @click="this.$emit('gedrueckt', 'fusion')">fusion</a>
+        <a href="#about" @click="this.$emit('gedrueckt', 'Blender')">Blender</a>
       </li>
       <li>
         <a href="#about" @click="this.$emit('gedrueckt', 'fusion')">fusion</a>
@@ -45,7 +38,10 @@
   </ul>
   
 </template>
-<style scoped>
+
+<style scoped> 
+
+/* scoped nur auf diese datei (NL-liste)  */ 
 ol {
   list-style-type: decimal;
   margin: 0;
