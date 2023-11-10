@@ -2,24 +2,18 @@
 <div id = hauptbild>
   
 
-  <img src="../assets/BlenderlogoC.png" v-if="(counter == 0)" class="hauptbild" />
-  <img src="../assets/TGI.png" v-else-if="(counter == 1)" class="hauptbild" />
-  <img src="../assets/BlenderlogoC.png" v-else-if="(counter == 2)" class="hauptbild" />
-  <img src="../assets/Kaliohneauge2.png" v-else-if="(counter == 3)" class="hauptbild" />
+  <img src="../assets/BlenderlogoC.png" v-show="(counter == 0)" class="hauptbild" />
+  <img src="../assets/TGI.png" v-show="(counter == 1)" class="hauptbild" />
+  
+  <img src="../assets/Kaliohneauge2.png" v-show="(counter == 2)" class="hauptbild" />
 
     <div float: right>
            <button  @click="weiter">Bild.Nr{{counter}}</button>
     </div> 
    
 
-<!-- <picture>
-<source media="(min-with: 650px)" srcset="Kaliohneauge2">
-<source media="(min-with: 1350px)" srcset="Kaliohneauge2">
-<source media="(min-with: 1350px)" srcset="BlenderlogoC">
-<img src="../assets/BlenderlogoC.png"> 
-<img src="../assets/Kaliohneauge2.png">
-<alt></alt>
-</picture> -->
+
+
 
 
 
@@ -38,7 +32,7 @@ export default {
   },
 };
 const counter = ref(0)
-const end = ref(4)
+const end = ref(3)
  function weiter(){
   counter.value++
   if (counter.value >= end.value){

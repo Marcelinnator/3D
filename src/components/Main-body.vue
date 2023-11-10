@@ -5,10 +5,11 @@
 
 
 
-  <p v-if="gedruektunduebergeben == 'klifffenger'">  
+  <p v-if="gedruektunduebergeben == 'fusion'">  
     <span class="pg" v-for="paragraph in letter" :key="paragraph">    <!-- span  -->
-      <!--ausgabe aus txt fail wen rüchgabewert aus liste nix ist -->
+      <!--ausgabe aus txt fail wen standart wert ist. -->
       {{ paragraph }}
+ 
 
       
     </span>
@@ -171,7 +172,7 @@ und als Slicer würde ich euch<a href="https://ultimaker.com/software/ultimaker-
 </template>
 
 <script>
-//import { ref } from "vue";
+
 import text1 from "raw-loader!../assets/text.txt"; // import row-loader bieted die möglichkeit dateien auszulesen und   <span  class="pg" v-for="paragraph in letter" :key="paragraph"> <span> auszugeben
 
 export default {
@@ -189,12 +190,7 @@ export default {
     };
   },
 };
-// const imgTorus = ref(true); //ref variable als true (boolion definirt)
-// function wechseln() {
-//   imgTorus.value = !imgTorus.value;
-//   //Must use `.value` to read or write the value wrapped by `ref()`
-// }
-//
+
 </script> 
 
 <style>

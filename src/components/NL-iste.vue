@@ -50,19 +50,21 @@ ol {
   /* background-color: #f1f1f1;*/
 }
 ul {
-  text-align: left;
+  text-align: center;
   list-style-type: none;
-  margin: 0;
-  padding: 20px;
+  margin-right:30px;
+  padding:20px;
+  padding-right:150px;
   width: 200px;
-  background-color: #f1f1f1;
+  background-color: #dbdbdb;
 }
 
 li a {
   display: block;
   color: #000;
-  padding: 8px 16px;
+  padding: 8px;
   text-decoration: none;
+
 }
 li a:hover {
   background-color: #555;

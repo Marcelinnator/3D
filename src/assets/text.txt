@@ -1,4 +1,10 @@
-hallo das ist eine Webseite welche ich für ein schulprojekt 
-erstellt habe alle bilder die verwendet wurden sind von mir selbst erstellt 
-(renders Blender) ich habe obwohl es auf der oberfleche nicht nach viel arbeit aus siht viel 
+Hallo das ist eine Webseite welche ich für ein Schulprojekt 
+erstellt habe alle Bilder die verwendet wurden sind von mir Selbst erstellt 
+(Renders Blender) ich habe obwohl es auf der Oberfleche nicht nach viel Arbeit aus sieht viel 
 zeit in das Projekt hinengestekt.
+
+Aber was ist das für ein Projekt ich habe  mich in die welt von java Skript (vue,)
+hinengestürtzt 
+
+und hier einen kurtzen deapdive in die welt von 3D Modelation hier kanst du dir einen kurtzen 
+einblick ferschaffen was 3d modeling ist und welche Anbiter an Softwer gibt.
